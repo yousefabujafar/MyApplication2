@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>App.tsx</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #6a8759;}
+.s4 { color: #808080;}
+.s5 { color: #ffc66d;}
+.s6 { color: #a9b7c6;}
+.s7 { color: #e8bf6a;}
+.s8 { color: #bbb529;}
+.s9 { color: #d0d0ff;}
+.s10 { color: #6897bb; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+App.tsx</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s2">React</span><span class="s1">, { </span><span class="s2">Component </span><span class="s1">} </span><span class="s0">from </span><span class="s3">'react'</span><span class="s1">;</span>
+<span class="s0">import </span><span class="s1">{ </span><span class="s2">View</span><span class="s1">, </span><span class="s2">Text</span><span class="s1">, </span><span class="s2">Button </span><span class="s1">} </span><span class="s0">from </span><span class="s3">'react-native'</span><span class="s1">;</span>
+
+<span class="s0">class </span><span class="s2">App </span><span class="s0">extends </span><span class="s2">Component </span><span class="s1">{</span>
+  <span class="s0">constructor</span><span class="s1">() {</span>
+    <span class="s2">super</span><span class="s1">();</span>
+    <span class="s2">this</span><span class="s1">.</span><span class="s2">state </span><span class="s0">= </span><span class="s1">{</span>
+      <span class="s1">displayText: </span><span class="s3">''</span><span class="s1">,</span>
+    <span class="s1">};</span>
+  <span class="s1">}</span>
+
+  <span class="s1">displayInfo </span><span class="s0">= </span><span class="s1">() </span><span class="s0">=&gt; </span><span class="s1">{</span>
+    <span class="s4">// Replace 'Your Name' and 'Your University ID' with your actual name and university ID.</span>
+    <span class="s2">this</span><span class="s1">.</span><span class="s5">setState</span><span class="s1">({ displayText: </span><span class="s3">'Yousef AbuJafar - 127023' </span><span class="s1">});</span>
+  <span class="s1">};</span>
+
+  <span class="s1">render() {</span>
+    <span class="s0">return </span><span class="s1">(</span>
+      <span class="s6">&lt;</span><span class="s7">View </span><span class="s9">style</span><span class="s0">=</span><span class="s8">{{ flex: </span><span class="s10">1</span><span class="s8">, justifyContent: </span><span class="s3">'center'</span><span class="s8">, alignItems: </span><span class="s3">'center' </span><span class="s8">}}</span><span class="s6">&gt;</span>
+        <span class="s6">&lt;</span><span class="s7">Text </span><span class="s9">style</span><span class="s0">=</span><span class="s8">{{ fontSize: </span><span class="s10">20</span><span class="s8">, marginBottom: </span><span class="s10">20 </span><span class="s8">}}</span><span class="s6">&gt;</span><span class="s8">{</span><span class="s2">this</span><span class="s8">.</span><span class="s2">state</span><span class="s8">.</span><span class="s2">displayText</span><span class="s8">}</span><span class="s6">&lt;/</span><span class="s7">Text</span><span class="s6">&gt;</span>
+        <span class="s6">&lt;</span><span class="s7">Button </span><span class="s9">title</span><span class="s0">=</span><span class="s3">&quot;Display Info&quot; </span><span class="s9">onPress</span><span class="s0">=</span><span class="s8">{</span><span class="s2">this</span><span class="s8">.</span><span class="s2">displayInfo</span><span class="s8">} </span><span class="s6">/&gt;</span>
+      <span class="s6">&lt;/</span><span class="s7">View</span><span class="s6">&gt;</span>
+    <span class="s1">);</span>
+  <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s0">export default </span><span class="s2">App</span><span class="s1">;</span>
+</pre>
+</body>
+</html>
